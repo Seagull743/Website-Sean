@@ -18,14 +18,44 @@
 
         body {
             background-color: rgb(5, 5, 5);
+            padding-left: 15px;
+            padding-right: 15px;
         }
 
         .nav-link {
             color: rgb(228, 228, 228);
+            padding-left: 80px;
         }
 
         .navbar {
             background-color: rgb(9, 9, 9);
+        }
+
+        .active , .nav-link:hover {
+            color: rgb(247, 171, 31);
+        }
+
+        h1 {
+            color: white;
+            position: absolute;
+            top: 350px;
+            left: 170px;
+        }
+
+        #name {
+            color: white;
+            font-size: 22px;
+            position: absolute;
+            top: 325px;
+            left: 175px;
+        }
+
+        #brief {
+            color: white;
+            font-size: 22px;
+            position: absolute;
+            top: 460px;
+            left: 175px;
         }
 
     </style>
@@ -36,12 +66,12 @@
 </head>
 <body>
     <div class="container-fluid bg-light" style="padding: 0%;">
-        <nav class="navbar navbar-light" id="navigation">
+        <nav class="navbar navbar" id="navigation">
             <ul class="nav">
                 <li class="nav-item">
-                    <a class="nav-link active" href="#">Home</a>
+                    <a class="nav-link active" href="#" style="margin-left: 100px;">Home</a>
                 </li>
-                <li class="nav-itme">
+                <li class="nav-item">
                     <a class="nav-link" href="#">About</a>
                 </li>
                 <li class="nav-item">
@@ -52,6 +82,14 @@
                 </li>
             </ul>
         </nav>
+        <div class="row" style="background-color: rgb(5, 5, 5); height: 700px;">
+            <div class="col-lg-7" style="background-color: rgb(5, 5, 5)">
+                <p id="name"> Kia ora, I'm Sean.</p>    
+                <header> <h1 class="display-1  fw-bold">  Bringing my creations to life. </h1>  </header>
+                <p id="brief" class="fw-light"> I'm a New Zealand aspiring software developer.</p>  
+                          
+            </div>
+        </div>
     </div>
 </body>
 </html>
