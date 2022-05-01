@@ -35,17 +35,17 @@
         }
 
         .active , .nav-link:hover {
-            color: rgb(22, 252, 71);
+            color: cyan;
             transition: all 0.5s ease-in-out;
         }
 
         .btn-outline-light , .btn{
-            color: rgb(32, 216, 72);
-            border-color: rgb(32, 216, 72);
+            color: cyan;
+            border-color: cyan;
         }
 
         h1 {
-            color: rgb(22, 252, 71);
+            color: rgb(255, 255, 255);
             position: absolute;
             top: 350px;
             left: 170px;
@@ -60,20 +60,20 @@
         }
 
         a {
-            color:rgb(32, 216, 72);
+            color: cyan;
             text-decoration: none;
             transition: all 0.5s ease-in-out;
 
         }
 
         a:hover {
-            color:rgb(32, 216, 72);
+            color: cyan;
             transition: all 0.5s ease-in-out;
 
         }
 
         .btn:hover {
-            color: rgb(32, 216, 72)
+            color: cyan;
         }
 
         #info {
@@ -106,16 +106,21 @@
         }
 
         #contact {
-            background-color:rgb(32, 216, 72);
+            background-color: rgb(3, 154, 214);
             padding: 3px;
             padding-left: 15px;
             padding-right: 15px;
             border-radius: 15px;
         }
 
-        #contacta:hover {
-            color: white;
+        #contact:hover {
+            transition: all 0.5s ease-in-out;
+            padding: 4px;
+            padding-left: 16px;
+            padding-right: 16px;
+            border-radius: 16px;
         }
+       
 
     </style>
 
@@ -128,7 +133,7 @@
         <nav class="navbar navbar" id="navigation">
             <ul class="nav">
                 <li class="nav-item">
-                    <a class="nav-link active" href="#" style="margin-left: 100px;">Home</a>
+                    <a class="nav-link active " href="#" style="margin-left: 100px;">Home</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#">About</a>
@@ -144,7 +149,7 @@
         <div class="row" style="background-color: rgb(5, 5, 5); height: 700px;">
             <div class="col-lg-7">
                 <p id="name"> Kia ora, I'm Sean.</p>    
-                <header> <h1 class="display-1  fw-bold"> Place holder text here.</h1>  </header>
+                <header> <h1 class="display-1  fw-bold"> Place holder text here<span style="color: rgb(3, 154, 214);">.</span></h1>  </header>
                 <p id="brief" class="fw-light"> I'm a New Zealand, aspiring software developer.</p>
                 <p id="info"><a href="#">More info <i class="fa-solid fa-angle-right"></i></a> </i></p>  
             </div>
@@ -172,8 +177,8 @@
                         <a class="btn btn-outline-light btn-floating m-1 mt-3" href="https://www.linkedin.com/in/sean-gullery-489534231/"  target=”_blank” role="button">
                             <i class="fa-brands fa-linkedin-in"></i>
                         </a>
-                        <br> <hr>
-                        <p>© 2022 Copyright Sean </p>
+                        <br>
+                        <p style="padding-top: 12px;">© 2022 Copyright, Designed by Sean Gullery </p>
                     </div>
                 </div>
             </div>
