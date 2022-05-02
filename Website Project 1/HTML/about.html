@@ -15,70 +15,62 @@
     <!-- Font Awesome -->
     <!-- Add icon library font awesome -->
     <script src="https://kit.fontawesome.com/30ae003dba.js" crossorigin="anonymous"></script>
-
-    
-    <!-- old orange color rgb(247, 171, 31); -->
     
     <style>
+    
+        /*  Nav Bar css    */ 
+    
+            .nav-link {
+                color: rgb(228, 228, 228);
+                margin-left: 80px;
+            }
+    
+            .navbar {
+                background-color: rgb(9, 9, 9);
+            }
+    
+            .active , .nav-link:hover {
+                color: cyan;
+            }
+    
+            a {
+                color: rgb(158,184,191);
+                text-decoration: none;
+    
+            }
+    
+            a:hover {
+                color: cyan;
+    
+            }
+    
+            #contact {
+            background-color: rgb(3, 154, 214);
+            padding: 3px;
+            padding-left: 15px;
+            padding-right: 15px;
+            border-radius: 15px;
+            }
+
+        #contact:hover {
+            transition: all 0.5s ease-in-out;
+            padding: 4px;
+            padding-left: 16px;
+            padding-right: 16px;
+            border-radius: 16px;
+            }
+
+
+        /*  end of nav css  */ 
+
+
         body {
             background-color: rgb(5, 5, 5);
-        }
-
-        .nav-link {
-            color: rgb(228, 228, 228);
-            margin-left: 80px;
-        }
-
-        .navbar {
-            background-color: rgb(9, 9, 9);
-        }
-
-        .active , .nav-link:hover {
-            color: cyan;
-            transition: all 0.5s ease-in-out;
-        }
-
-        h1 {
-            color: rgb(255, 255, 255);
-            position: absolute;
-            top: 350px;
-            left: 170px;
-        }
-
-        #name {
             color: white;
-            font-size: 22px;
-            position: absolute;
-            top: 325px;
-            left: 175px;
         }
 
-        a {
-            color: cyan;
-            text-decoration: none;
-            transition: all 0.5s ease-in-out;
-
-        }
-
-        a:hover {
-            color: cyan;
-            transition: all 0.5s ease-in-out;
-
-        }
-
-        #info {
-            font-size: 16px;
-            position: absolute;
-            top: 500px;
-            left: 175px;
-        }
-
-        #brief {
-            color: white;
-            font-size: 22px;
-            position: absolute;
-            top: 460px;
-            left: 175px;
+        p {
+            padding: 5px;
         }
 
         #rowfooter1 {     
@@ -87,26 +79,10 @@
             width: 100%;
         }
 
-        #contact {
-            background-color: rgb(3, 154, 214);
-            padding: 3px;
-            padding-left: 15px;
-            padding-right: 15px;
-            border-radius: 15px;
-        }
 
-        #contact:hover {
-            transition: all 0.5s ease-in-out;
-            padding: 4px;
-            padding-left: 16px;
-            padding-right: 16px;
-            border-radius: 16px;
-        }
-
-
-        /*   Button   */
+        /*  Buttons  */
         .btn {
-            color: cyan;
+        color: cyan;
         }
 
         .btn-outline-light , .btn{
@@ -122,19 +98,25 @@
             transform: scale(1.05);
         }
 
+        #seanimg {
+            border-radius: 250px;
+            filter: brightness(60%);
+        }
+
     </style>
-    <!-- Place holder title-->
-    <title>sean Gullery</title>
+
+
+    <title>Sean G </title>
 </head>
 <body>
-    <div class="container bg-light" style="padding: 0%; width: 100%;">
+    <div class="container-fluid bg-light" style="padding: 0%; width: 100%;">
         <nav class="navbar navbar" id="navigation">
             <ul class="nav">
                 <li class="nav-item">
-                    <a class="nav-link active " href="#" style="margin-left: 100px;">Home</a>
+                    <a class="nav-link" href="index.html" style="margin-left: 100px;">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="about.html">About</a>
+                    <a class="nav-link active" href="#">About</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#">Portfolio</a>
@@ -144,17 +126,32 @@
                 </li>
             </ul>
         </nav>
-        <div class="row" style="background-color: rgb(5, 5, 5); height: 700px;">
-            <div class="col-md-7">
-                <p id="name"> Kia ora, I'm Sean.</p>    
-                <header> <h1 class="display-1  fw-bold"> Place holder text here<span style="color: rgb(3, 154, 214);">.</span></h1>  </header>
-                <p id="brief" class="fw-light"> I'm a New Zealand, aspiring software developer.</p>
-                <p id="info"><a href="#">More info <i class="fa-solid fa-angle-right"></i></a> </i></p>  
-            </div>          
-            <div class="col-md-5">
-               
-            </div>   
-        </div>
+        <section style="background-color: rgb(5, 5, 5);">
+            <div class="container-fluid" style="padding-left: 150px;">
+                <div class="row">
+                    <div class="col-md-6">
+                        <br> <br> <br> <br> <br>
+                        <h1 class="display-1 fw-bold"> ABOUT ME<span style="color: rgb(3, 154, 214);">.</span> </h1>
+                        <hr>
+                        <h3 class="fw-light" style="font-size: 30px;"> I'm an asipiring Software Developer. Currently studying Full Stack <br> Development, with prior experience in Game Development. </h3>
+                        <br>
+                    <article>
+                        <p class="fw-light lh-lg">
+                            My interest in video games led me to study Game Development. Exploring this field of study, led me to discover my passion for programming and complete a Diploma in Game Art and Development. I decided to further my knowledge where I am currently completing a Full Stack Development course, while being on contract work with an IT company Called Cognitiv.
+                            My overall goal as a Software Developer is to become a Back End Developer, as Data Science intrigues me. 
+                        </p>
+                        <p class="fw-light">
+                            When I'm not programming you would most likely find me at the gym.
+                        </p>
+                    </article>
+                    </div>
+                    <div class="col-md-6">
+                        <br> <br> <br> <br> <br>
+                        <img id="seanimg" src="../images/SGulleryPic.jpg" class="img-fluid" alt="Image of publisher" style="width: 500px; height: 500px; margin-left: 175px;">
+                    </div>
+                </div>
+            </div>
+        </section>
         <!-- Referenced bootstrap for button classes -->
         <footer class="bg-light text-center text-white">
             <div class="containter-fluid bg-light"> 
@@ -172,7 +169,7 @@
                         <a class="btn btn-outline-light btn-floating m-1 mt-3" href="https://www.linkedin.com/in/sean-gullery-489534231/"  target=”_blank” role="button">
                             <i class="fa-brands fa-linkedin-in"></i>
                         </a>
-                        <br>
+                        <br> 
                         <p style="padding-top: 12px;">© 2022 Copyright, Designed by Sean Gullery </p>
                     </div>
                 </div>
