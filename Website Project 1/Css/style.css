@@ -1,7 +1,5 @@
 body {
     background-color: rgb(5, 5, 5);
-    padding-left: 15px;
-    padding-right: 15px;
 }
 
 .nav-link {
@@ -14,16 +12,12 @@ body {
 }
 
 .active , .nav-link:hover {
-    color: rgb(22, 252, 71);
-}
-
-.btn-outline-light , .btn{
-    color: rgb(32, 216, 72);
-    border-color: rgb(32, 216, 72);
+    color: cyan;
+    transition: all 0.5s ease-in-out;
 }
 
 h1 {
-    color: rgb(22, 252, 71);
+    color: rgb(255, 255, 255);
     position: absolute;
     top: 350px;
     left: 170px;
@@ -38,18 +32,16 @@ h1 {
 }
 
 a {
-    color:rgb(32, 216, 72);
+    color: cyan;
     text-decoration: none;
+    transition: all 0.5s ease-in-out;
 
 }
 
 a:hover {
-    color:rgb(32, 216, 72);
+    color: cyan;
+    transition: all 0.5s ease-in-out;
 
-}
-
-.btn:hover {
-    color: rgb(32, 216, 72)
 }
 
 #info {
@@ -67,14 +59,6 @@ a:hover {
     left: 175px;
 }
 
-#seanimg {
-    position: absolute;
-    top: 200px;
-    left: 1200px;
-    border-radius: 250px;
-    filter: brightness(70%);
-}
-
 #rowfooter1 {     
     position: fixed;
     bottom: 0%;
@@ -82,13 +66,36 @@ a:hover {
 }
 
 #contact {
-    background-color:rgb(32, 216, 72);
+    background-color: rgb(3, 154, 214);
     padding: 3px;
     padding-left: 15px;
     padding-right: 15px;
     border-radius: 15px;
 }
 
-#contacta:hover {
-    color: white;
+#contact:hover {
+    transition: all 0.5s ease-in-out;
+    padding: 4px;
+    padding-left: 16px;
+    padding-right: 16px;
+    border-radius: 16px;
+}
+
+
+/*   Button   */
+.btn {
+    color: cyan;
+}
+
+.btn-outline-light , .btn{
+    color: cyan;
+    border-color: cyan;
+}
+
+.btn:hover {
+    background-color: black;
+    border-color: cyan;
+    color: cyan;
+    transition: all 0.5s ease-in-out;
+    transform: scale(1.05);
 }

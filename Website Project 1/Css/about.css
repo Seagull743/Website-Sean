@@ -1,0 +1,82 @@
+.nav-link {
+    color: rgb(228, 228, 228);
+    margin-left: 80px;
+}
+
+.navbar {
+    background-color: rgb(9, 9, 9);
+}
+
+.active , .nav-link:hover {
+    color: cyan;
+}
+
+a {
+    color: rgb(158,184,191);
+    text-decoration: none;
+
+}
+
+a:hover {
+    color: cyan;
+
+}
+
+#contact {
+background-color: rgb(3, 154, 214);
+padding: 3px;
+padding-left: 15px;
+padding-right: 15px;
+border-radius: 15px;
+}
+
+#contact:hover {
+transition: all 0.5s ease-in-out;
+padding: 4px;
+padding-left: 16px;
+padding-right: 16px;
+border-radius: 16px;
+}
+
+
+/*  end of nav css  */ 
+
+
+body {
+background-color: rgb(5, 5, 5);
+color: white;
+}
+
+p {
+padding: 5px;
+}
+
+#rowfooter1 {     
+position: fixed;
+bottom: 0%;
+width: 100%;
+}
+
+
+/*  Buttons  */
+.btn {
+color: cyan;
+}
+
+.btn-outline-light , .btn{
+color: cyan;
+border-color: cyan;
+}
+
+.btn:hover {
+background-color: black;
+border-color: cyan;
+color: cyan;
+transition: all 0.5s ease-in-out;
+transform: scale(1.05);
+}
+
+#seanimg {
+border-radius: 250px;
+filter: brightness(60%);
+}
