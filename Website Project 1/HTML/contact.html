@@ -16,7 +16,7 @@
     <!-- Add icon library font awesome -->
     <script src="https://kit.fontawesome.com/30ae003dba.js" crossorigin="anonymous"></script>
 
-    <title> Sean G</title>
+    <title>SeanG Developer </title>
 
     <style>
     /*  Nav Bar css    */ 
@@ -37,18 +37,31 @@
         a {
             color: rgb(158,184,191);
             text-decoration: none;
-
+            transition: all 0.3s ease 0s;
         }
 
         a:hover {
+            transition: all 0.5s ease-in-out;
             color: cyan;
 
         }
 
 
-        #contacta:hover {
+        #contact {
+            background-color: rgba(0, 136, 169, 0.8);
             color: white;
+            padding: 3px;
+            padding-left: 15px;
+            padding-right: 15px;
+            border-radius: 15px;
+            transition: all 0.3s ease 0s;
+            cursor: auto;
         }
+
+        #contact:hover {
+            cursor: context-menu;
+        }
+
 
     /*  end of nav css  */ 
 
@@ -140,7 +153,7 @@
 </head>
 <body>
     <div class="container-fluid bg-light" style="padding: 0%; width: 100%;">
-        <nav class="navbar navbar" id="navigation">
+        <nav class="navbar" id="navigation">
             <ul class="nav">
                 <li class="nav-item">
                     <a class="nav-link" href="index.html" style="margin-left: 100px;">Home</a>
@@ -149,10 +162,10 @@
                     <a class="nav-link" href="about.html">About</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Portfolio</a>
+                    <a class="nav-link" href="portfolio.html">Portfolio</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link active" href="#"> <span id="contact"> Contact </span> </a>
+                <li class="nav-item contact">
+                    <a class="nav-link " href="#" style="cursor: auto;"> <span id="contact"> Contact </span> </a>
                 </li>
             </ul>
         </nav>

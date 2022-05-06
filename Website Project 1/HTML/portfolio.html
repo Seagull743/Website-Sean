@@ -34,24 +34,21 @@
             }
     
             a:hover {
+                transition: all 0.5s ease-in-out;
                 color: cyan;
-    
             }
     
             #contact {
-            background-color: rgb(3, 154, 214);
+            background-color: rgba(0, 136, 169, 1);
             padding: 3px;
             padding-left: 15px;
             padding-right: 15px;
             border-radius: 15px;
+            transition: all 0.3s ease 0s;
             }
 
         #contact:hover {
-            transition: all 0.5s ease-in-out;
-            padding: 4px;
-            padding-left: 16px;
-            padding-right: 16px;
-            border-radius: 16px;
+            background-color: rgba(0, 136, 169, 0.8);
             }
 
             /*  End of Nav styles   */
@@ -60,14 +57,43 @@
             color: white;
             }
 
+        #rowfooter1 {     
+            position: fixed;
+            bottom: 0%;
+            width: 100%;
+        }
+
+
+        /*  Buttons  */
+        .btn {
+        color: cyan;
+        }
+
+        .btn-outline-light , .btn{
+            color: cyan;
+            border-color: cyan;
+        }
+
+        .btn:hover {
+            background-color: black;
+            border-color: cyan;
+            color: cyan;
+            transition: all 0.5s ease-in-out;
+            transform: scale(1.05);
+        }
+
+        .img-thumbnail {
+             background: rgb(158,184,191);
+        }
+
     </style>
 
 
-    <title>Sean G</title>
+    <title>SeanG Developer </title>
 </head>
 <body>
     <div class="container-fluid bg-light" style="padding: 0%; width: 100%;">
-        <nav class="navbar navbar" id="navigation">
+        <nav class="navbar" id="navigation">
             <ul class="nav">
                 <li class="nav-item">
                     <a class="nav-link" href="index.html" style="margin-left: 100px;">Home</a>
@@ -79,7 +105,7 @@
                     <a class="nav-link active" href="#">Portfolio</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link badge-primary" href="contact.html" id="contacta"> <span id="contact" style="color: white;"> Contact </span> </a>
+                    <a class="nav-link badge-primary" href="contact.html"> <span id="contact" style="color: white;"> Contact </span> </a>
                 </li>
             </ul>
         </nav>
@@ -87,28 +113,62 @@
             <div class="container-fluid"> 
                 <div class="row">
                     <div class="col-md-12">
-                        <br> <br>  
-                        <h1 class="display-1 fw-bold" style="text-align: center; font-size: 45px;"> Welcome to my portfolio</h1>
-                        <hr style="width: 600px; margin-left: 650px;"> <br> <br>
-                        <p class="fw-light"  style="text-align: center;"> Down below are some of the projects I have created over the years, primarily video games. <br> Many of these projects were 4 week game james, all the way up to 4 month projects. <br> Explore the variety of projects down below.</p>
+                        <br> <br> 
+                        <h1 class="display-1 fw-bold" style="text-align: center; font-size: 45px;"> Welcome to my portfolio<span style="color: rgb(3, 154, 214);">.</span></h1>
+                        <hr style="width: 600px; margin-left: 650px;"> 
+                        <p class="fw-light"  style="text-align: center;"> Down below are some of the projects that I programmed over the years, primarily video games. <br> Many of these games were mini projects getting used to small time frames, <br> ranging from 2 weeks all the way up to 2 months. <br> Explore the variety of projects down below.</p>
                     </div>
                 </div>
             </div>
         </section>
-        <section>
-            <div class="container-fluid">
+        <section style="background-color: rgb(5, 5, 5);">
+            <br> 
+            <div class="container-fluid d-flex justify-content-center">
                 <div class="row" style="height: 400px;">
-                    <div class="col-md-6" style="background-color: rgb(7, 7, 7);">
-                        <h3 class="display-3" style="text-align: center; font-size: 35px;"> The forgotten </h3>
-                        <br> <br>
-                        <p class="fw-light" style="text-align: center;"> This was a 5 week project, with other game developers. I was the sole programmer in this group of 4. </p>
+                    <div class="col-md-4 d-flex flex-column justify-content-center">       
+                        <figure class="figure">
+                        <a href="https://seagull743.itch.io/area-21" alt="Area 21 image logo" target="_blank"> <img src="../images/area 21.png" alt="Area-21 game logo" class="img-thumbnail rounded" style="border-width: 1px; width: 500px;"> </a>
+                        <figcaption class="figure-caption" style="color: white;"> Area 21 (2 week project) </figcaption>
+                        </figure>
                     </div>
-                    <div class="col-md-6"  style="background-color: rgb(7, 7, 7);">
-                        <img  class="img-thumbnail" src="../images/The forgotten.png" alt="The forgotten game logo">
+                    <div class="col-md-4 d-flex justify-content-center d-flex flex-column">
+                        <figure class="figure">
+                            <a href="https://seagull743.itch.io/space-raider" alt="Space Raiders image logo" target="_blank"> <img src="../images/SpaceRaiders.png" alt="Space Raiders game logo" class="img-thumbnail rounded" style="border-width: 1px; width: 500px;"> </a>
+                        <figcaption class="figure-caption" style="color: white;"> Space Raiders (1 month project) </figcaption>
+                        </figure>
+                    </div>
+                    <div class="col-md-4 d-flex justify-content-center">
+                        <figure class="figure">
+                            <a href="https://seagull743.itch.io/sons-of-midgard" alt="Sons of Midgard image logo" target="_blank"> <img src="../images/SonsOfMidgardpng.png" alt="Sons Of Midgard game logo" class="img-thumbnail rounded" style="border-width: 1px; width: 500px;"> </a>
+                        <figcaption class="figure-caption" style="color: white;"> Sons Of Midgard (2 month project) </figcaption>
+                        </figure>
                     </div>
                 </div>
             </div>
         </section>
+        <!-- Referenced bootstrap for button classes -->
+        <footer class="bg-light text-center text-white">
+            <div class="containter-fluid bg-light"> 
+                <div id="rowfooter1"class="row" style="background-color: rgb(7, 7, 7); height: 125px;">
+                    <div class="col-lg-12">
+                        <!-- github icon from font awesome-->
+                        <a class="btn btn-outline-light btn-floating m-1 mt-3" href="https://github.com/Seagull743"  target=”_blank” role="button">
+                            <i class="fa-brands fa-git"></i>
+                        </a>
+                        <!-- itch.io icon from font awesome-->
+                        <a class="btn btn-outline-light btn-floating m-1 mt-3" href="https://seagull743.itch.io/"  target=”_blank” role="button">
+                            <i class="fa-brands fa-itch-io"></i>
+                        </a>
+                        <!-- linkedin icon from font awesome-->
+                        <a class="btn btn-outline-light btn-floating m-1 mt-3" href="https://www.linkedin.com/in/sean-gullery-489534231/"  target=”_blank” role="button">
+                            <i class="fa-brands fa-linkedin-in"></i>
+                        </a>
+                        <br> 
+                        <p style="padding-top: 12px;">© 2022 Copyright, Designed by Sean Gullery </p>
+                    </div>
+                </div>
+            </div>
+        </footer>
     </div>
 </body>
 </html>

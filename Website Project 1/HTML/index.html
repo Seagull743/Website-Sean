@@ -4,109 +4,68 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Links to css file-->
-    <link rel="stylesheet" href="../css/style.css" >
-    <!-- links to my Js file-->
+    <link rel="stylesheet" href="../css/portfolio.css">
     <script src="../js/script.js"></script>
     <!-- links to bootstrap cdns-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
     <!-- Font Awesome -->
-    <!-- Add icon library font awesome -->
     <script src="https://kit.fontawesome.com/30ae003dba.js" crossorigin="anonymous"></script>
 
-    
-    <!-- old orange color rgb(247, 171, 31); -->
-    
     <style>
-        body {
-            background-color: rgb(5, 5, 5);
-        }
-
-        .nav-link {
-            color: rgb(228, 228, 228);
-            margin-left: 80px;
-        }
-
-        .navbar {
-            background-color: rgb(9, 9, 9);
-        }
-
-        .active , .nav-link:hover {
-            color: cyan;
-            transition: all 0.5s ease-in-out;
-        }
-
-        h1 {
-            color: rgb(255, 255, 255);
-            position: absolute;
-            top: 350px;
-            left: 170px;
-        }
-
-        #name {
-            color: white;
-            font-size: 22px;
-            position: absolute;
-            top: 325px;
-            left: 175px;
-        }
-
-        a {
-            color: cyan;
-            text-decoration: none;
-            transition: all 0.5s ease-in-out;
-
-        }
-
-        a:hover {
-            color: cyan;
-            transition: all 0.5s ease-in-out;
-
-        }
-
-        #info {
-            font-size: 16px;
-            position: absolute;
-            top: 500px;
-            left: 175px;
-        }
-
-        #brief {
-            color: white;
-            font-size: 22px;
-            position: absolute;
-            top: 460px;
-            left: 175px;
-        }
-
-        #rowfooter1 {     
-            position: fixed;
-            bottom: 0%;
-            width: 100%;
-        }
-
-        #contact {
-            background-color: rgb(3, 154, 214);
+         .nav-link {
+                color: rgb(228, 228, 228);
+                margin-left: 80px;
+            }
+    
+            .navbar {
+                background-color: rgb(9, 9, 9);
+            }
+    
+            .active , .nav-link:hover {
+                color: cyan;
+            }
+    
+            a {
+                color: rgb(158,184,191);
+                text-decoration: none;
+    
+            }
+    
+            a:hover {
+                transition: all 0.5s ease-in-out;
+                color: cyan;
+            }
+    
+            #contact {
+            background-color: rgba(0, 136, 169, 1);
             padding: 3px;
             padding-left: 15px;
             padding-right: 15px;
             border-radius: 15px;
-        }
+            transition: all 0.3s ease 0s;
+            }
 
         #contact:hover {
-            transition: all 0.5s ease-in-out;
-            padding: 4px;
-            padding-left: 16px;
-            padding-right: 16px;
-            border-radius: 16px;
-        }
+            background-color: rgba(0, 136, 169, 0.8);
+            }
 
+            /*  End of Nav styles   */
+        body {
+            background-color: rgb(5, 5, 5);
+            color: white;
+            }
 
-        /*   Button   */
+         #rowfooter1 {     
+            position: fixed;
+            bottom: 0%;
+            width: 100%;
+         }
+       
+        /*  Buttons  */
         .btn {
-            color: cyan;
+        color: cyan;
         }
 
         .btn-outline-light , .btn{
@@ -120,41 +79,44 @@
             color: cyan;
             transition: all 0.5s ease-in-out;
             transform: scale(1.05);
-       }  
+        }
 
+     
     </style>
-    <!-- Place holder title-->
-    <title>sean Gullery</title>
+
+
+    <title>SeanG Developer </title>
 </head>
 <body>
-    <div class="container bg-light" style="padding: 0%; width: 100%;">
-        <nav class="navbar navbar" id="navigation">
+    <div class="container-fluid bg-light" style="padding: 0%; width: 100%;">
+        <nav class="navbar" id="navigation">
             <ul class="nav">
                 <li class="nav-item">
-                    <a class="nav-link active " href="#" style="margin-left: 100px;">Home</a>
+                    <a class="nav-link active" href="#" style="margin-left: 100px;">Home</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="about.html">About</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Portfolio</a>
+                    <a class="nav-link" href="portfolio.html">Portfolio</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link badge-primary" href="contact.html" id="contacta"> <span id="contact" style="color: white;"> Contact </span> </a>
+                    <a class="nav-link badge-primary" href="contact.html"> <span id="contact" style="color: white;"> Contact </span> </a>
                 </li>
             </ul>
         </nav>
-        <div class="row" style="background-color: rgb(5, 5, 5); height: 700px;">
-            <div class="col-md-7">
-                <p id="name"> Kia ora, I'm Sean.</p>    
-                <header> <h1 class="display-1  fw-bold"> Place holder text here<span style="color: rgb(3, 154, 214);">.</span></h1>  </header>
-                <p id="brief" class="fw-light"> I'm a New Zealand, aspiring software developer.</p>
-                <p id="info"><a href="#">More info <i class="fa-solid fa-angle-right"></i></a> </i></p>  
-            </div>          
-            <div class="col-md-5">
-               
-            </div>   
-        </div>
+        <section style="background-color: rgb(5, 5, 5);">
+            <div class="container-fluid d-flex justify-content-center"> 
+                <div class="row">
+                    <div class="col-md-12">
+                        <h2 class="display-2" style="margin-top: 250px; font-size: 30px; text-align: center;" id="intro">Kia ora, I'm Sean.</h2>
+                        <header> <h1 class="display-1 fw-bold" style="font-size: 70px; text-align: center;" id="welcome"> Welcome to my Website<span style="color: rgb(3, 154, 214);">.</span></h1></header>
+                        <p class="fw-light" style="font-size: 20px; text-align: center;">I'm an aspiring Software Developer from New Zealand.</p>
+                        <p style=" font-size: 18px; text-align: center;"> <a href="about.html" style="color: aqua;" id="info"> More info <i class="fa-solid fa-angle-right"></i></a> </p>
+                    </div>
+                </div>
+            </div>
+        </section>
         <!-- Referenced bootstrap for button classes -->
         <footer class="bg-light text-center text-white">
             <div class="containter-fluid bg-light"> 
@@ -172,7 +134,7 @@
                         <a class="btn btn-outline-light btn-floating m-1 mt-3" href="https://www.linkedin.com/in/sean-gullery-489534231/"  target=”_blank” role="button">
                             <i class="fa-brands fa-linkedin-in"></i>
                         </a>
-                        <br>
+                        <br> 
                         <p style="padding-top: 12px;">© 2022 Copyright, Designed by Sean Gullery </p>
                     </div>
                 </div>
