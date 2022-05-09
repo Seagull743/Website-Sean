@@ -20,52 +20,48 @@
     
         /*  Nav Bar css    */ 
     
-            .nav-link {
+        .nav-link {
                 color: rgb(228, 228, 228);
                 margin-left: 80px;
+                font-weight: bold;
             }
     
             .navbar {
-                background-color: rgb(9, 9, 9);
+                background-color: rgb(0, 0, 0);
             }
     
             .active , .nav-link:hover {
-                color: cyan;
+                color: rgb(199,73,58);
             }
     
             a {
-                color: rgb(158,184,191);
                 text-decoration: none;
-    
             }
     
+
+
             a:hover {
                 transition: all 0.5s ease-in-out;
-                color: cyan;
-    
+                color: rgb(199,73,58);
             }
     
             #contact {
-                background-color: rgba(0, 136, 169, 1);
-                padding: 3px;
-                padding-left: 15px;
-                padding-right: 15px;
-                border-radius: 15px;
-                transition: all 0.3s ease 0s;
+            background-color: rgba(199,73,58,1);
+            padding: 3px;
+            padding-left: 15px;
+            padding-right: 15px;
+            border-radius: 15px;
+            transition: all 0.3s ease 0s;
             }
 
         #contact:hover {
-            background-color: rgba(0, 136, 169, 0.8);
+            background-color: rgba(199,73,58,0.8);
             }
+
+            /*  End of Nav styles   */
 
 
         /*  end of nav css  */ 
-
-
-        body {
-            background-color: rgb(5, 5, 5);
-            color: white;
-        }
 
         p {
             padding: 5px;
@@ -73,6 +69,7 @@
 
         #rowfooter1 {     
             position: fixed;
+            background-color: rgb(0, 0, 0);
             bottom: 0%;
             width: 100%;
         }
@@ -80,27 +77,35 @@
 
         /*  Buttons  */
         .btn {
-        color: cyan;
+        color: rgb(199,73,58);
         }
 
         .btn-outline-light , .btn{
-            color: cyan;
-            border-color: cyan;
+            color: rgb(199,73,58);
+            border-color: rgb(199,73,58);
         }
 
         .btn:hover {
             background-color: black;
-            border-color: cyan;
-            color: cyan;
+            border-color: rgb(163,51,39);
+            color: rgb(163,51,39);
             transition: all 0.5s ease-in-out;
             transform: scale(1.05);
         }
+        /*  Buttons end */
 
         #seanimg {
             border-radius: 250px;
             filter: brightness(60%);
         }
 
+        html, body, section {
+            height: 100%;
+            color: rgb(207, 206, 206);
+            background: rgba(0, 0, 0, 0.801) url(../images/Space3.jpg);
+            background-blend-mode: darken;
+        }
+        
     </style>
 
 
@@ -124,18 +129,16 @@
                 </li>
             </ul>
         </nav>
-        <section style="background-color: rgb(5, 5, 5);">
+        <section>
             <div class="container-fluid" style="padding-left: 150px;">
                 <div class="row">
                     <div class="col-md-6">
                         <br> <br> <br> <br> <br>
-                        <h1 class="display-1 fw-bold"> ABOUT ME<span style="color: rgb(3, 154, 214);">.</span> </h1>
-                        <hr style="width: 450px;">
-                        <h3 class="fw-light" style="font-size: 30px;"> I'm an asipiring Software Developer. Currently studying Full Stack <br> Development, with prior experience in Game Development. </h3>
-                        <br>
+                        <h1 class="display-1 fw-bold" style="color: rgb(199,73,58);"> ABOUT ME<span style="color: rgb(104,151,117);">.</span> </h1>
+                        <hr style="width: 450px;">  
                     <article>
                         <p class="fw-light lh-lg">
-                            My interest in video games led me to study Game Development. Exploring this field of study, led me to discover my passion for programming and complete a Diploma in Game Art and Development. I decided to further my knowledge where I am currently completing a Full Stack Development course, while being on contract work with an IT company Called Cognitiv.
+                            My interest in video games led me to study Game Development. Exploring this field of study, led me to discover my passion for programming and complete a Diploma in Game Development and art. I decided to further my knowledge where I am currently completing a Full Stack Development course, while being on contract work with an IT company called Cognitiv.
                             My overall goal as a Software Developer is to become a Back End Developer, as Data Science intrigues me. 
                         </p>
                         <p class="fw-light">
@@ -153,7 +156,7 @@
         <!-- Referenced bootstrap for button classes -->
         <footer class="bg-light text-center text-white">
             <div class="containter-fluid bg-light"> 
-                <div id="rowfooter1"class="row" style="background-color: rgb(7, 7, 7); height: 125px;">
+                <div id="rowfooter1"class="row" style="height: 125px;">
                     <div class="col-lg-12">
                         <!-- github icon from font awesome-->
                         <a class="btn btn-outline-light btn-floating m-1 mt-3" href="https://github.com/Seagull743"  target=”_blank” role="button">

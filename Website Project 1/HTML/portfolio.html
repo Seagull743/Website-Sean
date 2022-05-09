@@ -14,32 +14,31 @@
     <script src="https://kit.fontawesome.com/30ae003dba.js" crossorigin="anonymous"></script>
 
     <style>
-         .nav-link {
+          .nav-link {
                 color: rgb(228, 228, 228);
                 margin-left: 80px;
+                font-weight: bold;
             }
     
             .navbar {
-                background-color: rgb(9, 9, 9);
+                background-color: rgb(0, 0, 0);
             }
     
             .active , .nav-link:hover {
-                color: cyan;
+                color: rgb(199,73,58);
             }
     
             a {
-                color: rgb(158,184,191);
                 text-decoration: none;
-    
             }
     
             a:hover {
                 transition: all 0.5s ease-in-out;
-                color: cyan;
+                color: rgb(199,73,58);
             }
     
             #contact {
-            background-color: rgba(0, 136, 169, 1);
+            background-color: rgba(199,73,58,1);
             padding: 3px;
             padding-left: 15px;
             padding-right: 15px;
@@ -48,42 +47,49 @@
             }
 
         #contact:hover {
-            background-color: rgba(0, 136, 169, 0.8);
+            background-color: rgba(199,73,58,0.8);
             }
 
             /*  End of Nav styles   */
-        body {
-            background-color: rgb(5, 5, 5);
-            color: white;
-            }
 
-        #rowfooter1 {     
+         #rowfooter1 {     
             position: fixed;
+            background-color: rgb(0, 0, 0);
             bottom: 0%;
             width: 100%;
-        }
+         }
 
 
         /*  Buttons  */
-        .btn {
-        color: cyan;
+         .btn {
+        color: rgb(199,73,58);
         }
 
         .btn-outline-light , .btn{
-            color: cyan;
-            border-color: cyan;
+            color: rgb(199,73,58);
+            border-color: rgb(199,73,58);
         }
 
         .btn:hover {
             background-color: black;
-            border-color: cyan;
-            color: cyan;
+            border-color: rgb(163,51,39);
+            color: rgb(163,51,39);
             transition: all 0.5s ease-in-out;
             transform: scale(1.05);
         }
+        /*  Buttons end */
+
 
         .img-thumbnail {
-             background: rgb(158,184,191);
+            background-color: rgba(104,151,117,0.7);
+        }
+
+
+        html, body, section {
+            color: rgb(207, 206, 206);
+            height: 100%;
+            background: rgba(0, 0, 0, 0.801) url(../images/Space3.jpg);
+            background-blend-mode: darken;
         }
 
     </style>
@@ -109,29 +115,29 @@
                 </li>
             </ul>
         </nav>
-        <section style="background-color: rgb(5, 5, 5);">
+        <section>
             <div class="container-fluid"> 
                 <div class="row">
                     <div class="col-md-12">
                         <br> <br> 
-                        <h1 class="display-1 fw-bold" style="text-align: center; font-size: 45px;"> Welcome to my portfolio<span style="color: rgb(3, 154, 214);">.</span></h1>
+                        <h1 class="display-1 fw-bold" style="text-align: center; font-size: 45px; color: rgb(199,73,58);"> Welcome to my portfolio<span style="color: rgb(104,151,117);">.</span></h1>
                         <hr style="width: 600px; margin-left: 650px;"> 
                         <p class="fw-light"  style="text-align: center;"> Down below are some of the projects that I programmed over the years, primarily video games. <br> Many of these games were mini projects getting used to small time frames, <br> ranging from 2 weeks all the way up to 2 months. <br> Explore the variety of projects down below.</p>
                     </div>
                 </div>
             </div>
         </section>
-        <section style="background-color: rgb(5, 5, 5);">
+        <section>
             <br> 
             <div class="container-fluid d-flex justify-content-center">
                 <div class="row" style="height: 400px;">
-                    <div class="col-md-4 d-flex flex-column justify-content-center">       
+                    <div class="col-md-4 d-flex  justify-content-center">       
                         <figure class="figure">
                         <a href="https://seagull743.itch.io/area-21" alt="Area 21 image logo" target="_blank"> <img src="../images/area 21.png" alt="Area-21 game logo" class="img-thumbnail rounded" style="border-width: 1px; width: 500px;"> </a>
                         <figcaption class="figure-caption" style="color: white;"> Area 21 (2 week project) </figcaption>
                         </figure>
                     </div>
-                    <div class="col-md-4 d-flex justify-content-center d-flex flex-column">
+                    <div class="col-md-4 d-flex justify-content-center d-flex">
                         <figure class="figure">
                             <a href="https://seagull743.itch.io/space-raider" alt="Space Raiders image logo" target="_blank"> <img src="../images/SpaceRaiders.png" alt="Space Raiders game logo" class="img-thumbnail rounded" style="border-width: 1px; width: 500px;"> </a>
                         <figcaption class="figure-caption" style="color: white;"> Space Raiders (1 month project) </figcaption>
@@ -149,7 +155,7 @@
         <!-- Referenced bootstrap for button classes -->
         <footer class="bg-light text-center text-white">
             <div class="containter-fluid bg-light"> 
-                <div id="rowfooter1"class="row" style="background-color: rgb(7, 7, 7); height: 125px;">
+                <div id="rowfooter1"class="row" style="height: 125px;">
                     <div class="col-lg-12">
                         <!-- github icon from font awesome-->
                         <a class="btn btn-outline-light btn-floating m-1 mt-3" href="https://github.com/Seagull743"  target=”_blank” role="button">
