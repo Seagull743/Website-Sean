@@ -1,74 +1,97 @@
-.nav-link {
-    color: rgb(228, 228, 228);
-    margin-left: 80px;
-    font-weight: bold;
-}
 
-.navbar-nav {
-    background-color: rgb(0, 0, 0);
-}
+    
+            
+             /*   Learn't how to darken an image from this website https://www.delftstack.com/howto/css/darken-background-image-css/ */
+             html, section {
+                color: white;
+                height: 100%;
+                background: rgba(0, 0, 0, 0.801) url(../images/Space3.jpg);
+                background-blend-mode: darken;
+            }
 
-.active , .nav-link:hover {
-    color: rgb(199,73,58);
-}
+            #navbar {
+                width: 100%;
+            }
+            
+            
+            a {
+                text-decoration: none;
+            }
+    
+            a:hover {
+                transition: all 0.5s ease-in-out;
+                color: rgb(199,73,58);
+            }
+    
+            #contact {
+            background-color: rgba(199,73,58,1);
+            padding: 3px;
+            padding-left: 15px;
+            padding-right: 15px;
+            
+            border-radius: 15px; 
+            transition: all 0.3s ease 0s;
+            }
 
-a {
-    text-decoration: none;
-}
+            #contact:hover {
+            background-color: rgba(199,73,58,0.8);
+            }
+
+            /*  End of Nav styles   */
+
+            #wrapper {
+                padding: 0%;
+            }
+           
+             h1 {
+                font-size: 70px;
+                text-align: center;
+                color: rgb(199,73,58);
+             }
+
+            #intro {
+                margin-top: 250px; 
+                font-size: 30px; 
+                text-align: center;
+            }
+
+            #aspiring {
+                font-size: 20px; 
+                text-align: center; 
+                color: rgb(207, 206, 206);
+            }
 
 
-a:hover {
-    transition: all 0.5s ease-in-out;
-    color: rgb(199,73,58);
-}
 
-#contact {
-background-color: rgba(199,73,58,1);
-padding: 3px;
-padding-left: 15px;
-padding-right: 15px;
-border-radius: 15px;
-transition: all 0.3s ease 0s;
-}
+            #rowfooter {     
+                position: fixed;
+                background-color: rgb(0, 0, 0);
+                bottom: 0%;
+                width: 100%;
+             }
 
-#contact:hover {
-background-color: rgba(199,73,58,0.8);
-}
+             .mainsection {
+                 width: 100%;
+             }
 
-/*  End of Nav styles   */
+            .moreinfop {
+                font-size: 18px; 
+                text-align: center;
+                color: rgb(163,51,39);
+            }
 
-#rowfooter1 {     
-position: fixed;
-background-color: rgb(0, 0, 0);
-bottom: 0%;
-width: 100%;
-}
+            #info {
+                color: rgb(163,51,39);
+                text-decoration: none;
+            }
 
-/*  Buttons  */
-.btn {
-color: rgb(199,73,58);
-}
+            .icondiv {
+                padding-right: 0%;
+                padding-left: 0%;
+            }
 
-.btn-outline-light , .btn{
-color: rgb(199,73,58);
-border-color: rgb(199,73,58);
-}
+            .copyright {
+                padding-top: 12px;
+            }
 
-.btn:hover {
-background-color: black;
-border-color: rgb(163,51,39);
-color: rgb(163,51,39);
-transition: all 0.5s ease-in-out;
-transform: scale(1.05);
-}
-
-/*   Buttons end   */
-
-/*   Learn't how to darken an image from this website https://www.delftstack.com/howto/css/darken-background-image-css/ */
-html, body, section {
-color: white;
-height: 100%;
-background: rgba(0, 0, 0, 0.801) url(../images/Space3.jpg);
-background-blend-mode: darken;
-}
-
+    
