@@ -18,6 +18,8 @@
     
     <style>
     
+
+        /* Bootstrap styles */
         /*  Nav Bar css    */ 
     
         .nav-link {
@@ -34,53 +36,13 @@
                 color: rgb(199,73,58);
             }
     
-            a {
-                text-decoration: none;
-            }
-    
-
-
-            a:hover {
-                transition: all 0.5s ease-in-out;
-                color: rgb(199,73,58);
-            }
-    
-            #contact {
-            background-color: rgba(199,73,58,1);
-            padding: 3px;
-            padding-left: 15px;
-            padding-right: 15px;
-            border-radius: 15px;
-            transition: all 0.3s ease 0s;
-            }
-
-        #contact:hover {
-            background-color: rgba(199,73,58,0.8);
-            }
-
-            /*  End of Nav styles   */
-
-
-        /*  end of nav css  */ 
-
-        p {
-            padding: 5px;
-        }
-
-        #rowfooter1 {     
-            position: fixed;
-            background-color: rgb(0, 0, 0);
-            bottom: 0%;
-            width: 100%;
-        }
-
 
         /*  Buttons  */
         .btn {
         color: rgb(199,73,58);
         }
 
-        .btn-outline-light , .btn{
+        .btn-outline-light , .btn {
             color: rgb(199,73,58);
             border-color: rgb(199,73,58);
         }
@@ -94,29 +56,17 @@
         }
         /*  Buttons end */
 
-        #seanimg {
-            border-radius: 250px;
-            filter: brightness(60%);
-        }
-
-        html, body, section {
-            height: 100%;
-            color: rgb(207, 206, 206);
-            background: rgba(0, 0, 0, 0.801) url(../images/Space3.jpg);
-            background-blend-mode: darken;
-        }
-        
     </style>
 
 
     <title>SeanG Developer </title>
 </head>
 <body>
-    <div class="container-fluid bg-light" style="padding: 0%; width: 100%;">
+    <div class="container-fluid bg-light" id="wrapper">
         <nav class="navbar-nav">
             <ul class="nav">
                 <li class="nav-item">
-                    <a class="nav-link" href="index.html" style="margin-left: 100px;">Home</a>
+                    <a class="nav-link" href="index.html">Home</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link active" href="#">About</a>
@@ -125,30 +75,30 @@
                     <a class="nav-link" href="portfolio.html">Portfolio</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link badge-primary" href="contact.html"> <span id="contact" style="color: white;"> Contact </span> </a>
+                    <a class="nav-link badge-primary" href="contact.html"> <span id="contact"> Contact </span> </a>
                 </li>
             </ul>
         </nav>
         <section>
-            <div class="container-fluid" style="padding-left: 150px;">
+            <div class="container-fluid" id="aboutmediv">
                 <div class="row">
-                    <div class="col-md-6">
-                        <br> <br> <br> <br> <br>
-                        <h1 class="display-1 fw-bold" style="color: rgb(199,73,58);"> ABOUT ME<span style="color: rgb(104,151,117);">.</span> </h1>
-                        <hr style="width: 450px;">  
+                    <div class="col-md-6 d-flex justify-content-center align-items-center flex-column">
+                        <br> <br> <br> 
+                        <h1 class="display-1 fw-bold"> ABOUT ME<span>.</span> </h1>
+                        <hr>  
                     <article>
-                        <p class="fw-light lh-lg">
+                        <p class="fw-light lh-lg text-center">
                             My interest in video games led me to study Game Development. Exploring this field of study, led me to discover my passion for programming and complete a Diploma in Game Development and Art. I decided to further my knowledge where I am currently completing a Full Stack Development course, while being on contract work with an IT company called Cognitiv.
                             My overall goal as a Software Developer is to become a Back End Developer, as Data Science intrigues me. 
                         </p>
-                        <p class="fw-light">
+                        <p class="fw-light text-center">
                             When I'm not programming you would most likely find me at the gym.
                         </p>
                     </article>
                     </div>
-                    <div class="col-md-6">
-                        <br> <br> <br> <br> <br>
-                        <img id="seanimg" src="../images/SGulleryPic.jpg" class="img-fluid" alt="Image of publisher" style="width: 500px; height: 500px; margin-left: 175px;">
+                    <div class="col-md-6 d-flex justify-content-center">
+                        <br> <br> <br> <br> 
+                        <img id="seanimg" src="../images/SGulleryPic.jpg" alt="Image of publisher">
                     </div>
                 </div>
             </div>
@@ -156,7 +106,7 @@
         <!-- Referenced bootstrap for button classes -->
         <footer class="bg-light text-center text-white">
             <div class="containter-fluid bg-light"> 
-                <div id="rowfooter1"class="row" style="height: 125px;">
+                <div id="rowfooter1">
                     <div class="col-lg-12">
                         <!-- github icon from font awesome-->
                         <a class="btn btn-outline-light btn-floating m-1 mt-3" href="https://github.com/Seagull743"  target=”_blank” role="button">
@@ -171,7 +121,7 @@
                             <i class="fa-brands fa-linkedin-in"></i>
                         </a>
                         <br> 
-                        <p style="padding-top: 12px;">© 2022 Copyright, Designed by Sean Gullery </p>
+                        <p id="copyright">© 2022 Copyright, Designed by Sean Gullery </p>
                     </div>
                 </div>
             </div>

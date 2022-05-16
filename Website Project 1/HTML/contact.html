@@ -5,7 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Links to css file-->
-     <!-- <link rel="stylesheet" src="../css/style.css" > -->
+
+    <link rel="stylesheet" href="../css/contact.css">
     <!-- links to my Js file-->
     <script src="../js/script.js"></script>
     <!-- links to bootstrap cdns-->
@@ -21,49 +22,19 @@
     <style>
      /*  Nav Bar css    */ 
     
-     .nav-link {
-                color: rgb(228, 228, 228);
-                margin-left: 80px;
-                font-weight: bold;
-            }
+    .nav-link {
+        color: rgb(228, 228, 228);
+        margin-left: 80px;
+        font-weight: bold;
+    }
     
-            .navbar-nav {
-                background-color: rgb(0, 0, 0);
-            }
+    .navbar-nav {
+        background-color: rgb(0, 0, 0);
+    }
     
-            .active , .nav-link:hover {
-                color: rgb(199,73,58);
-            }
-    
-            a {
-                text-decoration: none;
-                color: rgb(199,73,58);
-            }
-    
-
-            a:hover {
-                transition: all 0.5s ease-in-out;
-                color: rgb(163,51,39);
-            }
-    
-            #contact {
-            background-color: rgba(199,73,58,1);
-            cursor: context-menu;
-            color: white;
-            padding: 3px;
-            padding-left: 15px;
-            padding-right: 15px;
-            border-radius: 15px;
-            transition: all 0.3s ease 0s;
-            }
-
-             #contact:hover {
-            background-color: rgba(199,73,58,0.8);
-            color: white;
-            }
-
-            /*  End of Nav styles   */
-
+    .active , .nav-link:hover {
+        color: rgb(199,73,58);
+    }
 
 
     .display-1 {
@@ -83,30 +54,6 @@
         color: white;
     }
 
-   #divider {
-       margin-left: 90px;
-       width: 325px;
-   }
-
-   body {
-            background-color: rgb(5, 5, 5);
-            color: white;
-        }
-
-    hr {
-        color: white;
-    }
-
-    #divider {
-        width: 300px;
-        margin-left: 100px;
-    }
-
-    ::placeholder {
-        color: red;
-        opacity: 1
-    }
-
     .form-control {
         background-color: rgba(104,151,117,0.3);
         color: black;
@@ -118,55 +65,49 @@
     }
 
      /*  Buttons  */
-     .btn {
+    .btn {
         color: rgb(199,73,58);
-        }
+    }
 
-        .btn-outline-light , .btn{
-            color: rgb(199,73,58);
-            border-color: rgb(199,73,58);
-        }
+    .btn-outline-light , .btn{
+        color: rgb(199,73,58);
+        border-color: rgb(199,73,58);
+    }
 
-        .btn:hover {
-            background-color: black;
-            border-color: rgb(163,51,39);
-            color: rgb(163,51,39);
-            transition: all 0.5s ease-in-out;
-            transform: scale(1.05);
-        }
+    .btn:hover {
+        background-color: black;
+        border-color: rgb(163,51,39);
+        color: rgb(163,51,39);
+        transition: all 0.5s ease-in-out;
+        transform: scale(1.05);
+    }
         /*  Buttons end */
 
-    #rowfooter1 {     
-            position: fixed;
-            background-color: rgb(0, 0, 0);
-            bottom: 0%;
-            width: 100%;
-        }
-
-    hr {
-        color: rgb(158,184,191);
+    textarea {
+        resize: none;
     }
 
-    #media {
-        list-style: none;
-    }
+    a {
+    text-decoration: none;
+    color: rgb(199,73,58);
+}
 
-    html, body, section {
-            height: 100%;
-            color: rgb(207, 206, 206);
-            background: rgba(0, 0, 0, 0.801) url(../images/Space3.jpg);
-            background-blend-mode: darken;
-        }
+
+    a:hover {
+    transition: all 0.5s ease-in-out;
+    color: rgb(163,51,39);
+}
+
 
     </style>
     
 </head>
 <body>
-    <div class="container-fluid bg-light" style="padding: 0%; width: 100%;">
+    <div class="container-fluid bg-light" id="wrapper">
         <nav class="navbar-nav">
             <ul class="nav">
                 <li class="nav-item">
-                    <a class="nav-link" href="index.html" style="margin-left: 100px;">Home</a>
+                    <a class="nav-link" href="index.html">Home</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="about.html">About</a>
@@ -175,35 +116,34 @@
                     <a class="nav-link" href="portfolio.html">Portfolio</a>
                 </li>
                 <li class="nav-item contact">
-                    <a class="nav-link " href="#" style="cursor: auto;"> <span id="contact"> Contact </span> </a>
+                    <a class="nav-link " href="#"> <span id="contact"> Contact </span> </a>
                 </li>
             </ul>
         </nav>
         
     <section>
         <div class="container">
-            <header> <h1 class="display-1 fw-bold" style="font-size: 25; padding-top: 40px; color: rgb(199,73,58);"> CONTACT ME</h1></header>
+            <header> <h1 class="display-1 fw-bold"> CONTACT ME</h1></header>
             <hr>
-            <h2 style="text-align: center; font-size: 25px;">If you have any enquiries contact me!</h2>
-            <p class="fw-light" style="text-align: center;"> Please don't hesitate to email me!</p>
+            <h2>If you have any enquiries contact me!</h2>
             <br>
         <div class="row">
             <div class="col-md-6">
                 <!-- Going to be using formsubmit for sending information to me instead of using back end languages-->
                 <form class="form" action="https://formsubmit.co/seangullery@gmail.com" method="POST"> 
                     <div class="form-group">
-                        <label for="fname" style="margin-left: 7px;"> YOUR NAME</label>
+                        <label for="fname" class="labels"> YOUR NAME</label>
                         <input type="text" id="fname" name="name" pattern="[A-Za-z]" class="form-control">
                     </div>
                     <br>
                     <div class="form-group">
-                        <label for="email" style="margin-left: 7px;"> EMAIL ADDRESS<span style="color: rgb(145,113,100);">*</span></label>
+                        <label for="email"  class="labels"> EMAIL ADDRESS<span>*</span></label>
                         <input type="email" id="email" name="email" required class="form-control">
                     </div>
                     <br>
                     <div class="form-group">
-                        <label for="textbox" style="margin-left: 7px;">MESSAGE<span style="color: rgb(145,113,100);">*</span></label>
-                        <textarea rows="6" id="textbox" name="message" required class="form-control" style="resize: none;"> </textarea>
+                        <label for="textbox" class="labels">MESSAGE<span>*</span></label>
+                        <textarea rows="6" id="textbox" name="message" required class="form-control"> </textarea>
                     </div>
                     <br>
                     <div class="form-group text-center">
@@ -211,12 +151,8 @@
                     </div>
                 </form>
             </div>
-            <div class="col-md-6 ml-7" style="padding-left: 175px;">
-                <br> <br>
-                <p style="color: rgb(104,151,117);"> <i class="fa-solid fa-envelope ml-7" style="margin-left: 150px;"></i> &nbsp; &nbsp; seangullery@gmail.com </p>
-                
-                <hr id="divider">
-                <ul id="media" class="list-group list-group-horizontal justify-content-center" style="margin-left: 33px;"> 
+            <div class="col-md-6 ml-7 d-flex justify-content-center">
+                <ul id="media" class="list-group list-group-horizontal justify-content-center"> 
                   <li>
                         <!-- github icon from font awesome-->
                         <a class="btn btn-outline-light btn-floating m-1 mt-3" href="https://github.com/Seagull743"  target=”_blank” role="button">
@@ -242,9 +178,9 @@
     </section>
     <footer class="bg-light text-center text-white">
         <div class="containter-fluid bg-light"> 
-            <div id="rowfooter1"class="row" style="height: 125px;">
+            <div id="rowfooter1">
                 <div class="col-lg-12">
-                    <nav aria-label="breadcrumb" style="border-bottom: none;">
+                    <nav aria-label="breadcrumb">
                         <br> 
                         <ol class="breadcrumb justify-content-center">
                           <li class="breadcrumb-item"><a href="index.html">Home</a></li>
@@ -252,7 +188,7 @@
                           <li class="breadcrumb-item"><a href="portfolio.html">Portfolio</a></li>
                         </ol>
                     </nav>
-                    <p style="margin-bottom: 100px;">© 2022 Copyright, Designed by Sean Gullery </p>                 
+                    <p id="copyright">© 2022 Copyright, Designed by Sean Gullery </p>                 
                 </div>
             </div>
         </div>
