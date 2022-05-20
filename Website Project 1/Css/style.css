@@ -1,16 +1,36 @@
-
-    
+        
+            /* navbar styles */
             
-             /*   Learn't how to darken an image from this website https://www.delftstack.com/howto/css/darken-background-image-css/ */
-             html, section {
-                color: white;
-                height: 100%;
-                background: rgba(0, 0, 0, 0.801) url(../images/Space3.jpg);
-                background-blend-mode: darken;
+            .button {
+                color: rgb(199,73,58);
+                border: 1px solid rgb(199,73,58) ;
             }
-
+    
+            .button:hover {
+                background-color: black;
+                border-color: rgb(163,51,39);
+                color: rgb(163,51,39);
+                transition: all 0.5s ease-in-out;
+                transform: scale(1.05);
+            }
+    
+            .link-styles {
+                color: rgb(228, 228, 228);
+                margin-left: 80px;
+                font-weight: bold;
+            }
+    
+            .link-styles:hover {
+                color: rgb(199,73,58);
+            }
+    
+            #active {
+                color: rgb(199,73,58);
+            }
+            
             #navbar {
                 width: 100%;
+                background-color: rgb(0, 0, 0);
             }
             
             
@@ -25,6 +45,7 @@
     
             #contact {
             background-color: rgba(199,73,58,1);
+            color: white;
             padding: 3px;
             padding-left: 15px;
             padding-right: 15px;
@@ -37,8 +58,22 @@
             background-color: rgba(199,73,58,0.8);
             }
 
+            #dot {
+                color: rgb(104,151,117);
+            }
+
+
             /*  End of Nav styles   */
 
+            
+             /*   Learn't how to darken an image from this website https://www.delftstack.com/howto/css/darken-background-image-css/ */
+             html, section {
+                color: white;
+                height: 100%;
+                background: rgba(0, 0, 0, 0.801) url(../images/Space3.jpg);
+                background-blend-mode: darken;
+            }
+            
             #wrapper {
                 padding: 0%;
             }
