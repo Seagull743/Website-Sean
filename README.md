@@ -14,6 +14,7 @@ This website is created for viewers to get to know me and see work I have previo
 
 
 ## Sources used
-[Bootstrap] (https://getbootstrap.com/docs/5.2/getting-started/introduction/ "Bootstrap docs")
-[w3schools] (https://www.w3schools.com/ "w3schools home")
+1 [Bootstrap] (https://getbootstrap.com/docs/5.2/getting-started/introduction/ "Bootstrap docs")
+
+2 [w3schools] (https://www.w3schools.com/ "w3schools home")
 
