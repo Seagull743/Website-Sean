@@ -4,17 +4,22 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="../js/script.js"></script>
+    <!-- links to my Js file-->
+    <script src="js/script.js"></script>
     <!-- links to bootstrap cdns-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <link rel="stylesheet" href="../css/style.css">
+    <!-- Links to css file-->
+    <link rel="stylesheet" href="css/about.css" >
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
     <!-- Font Awesome -->
+    <!-- Add icon library font awesome -->
     <script src="https://kit.fontawesome.com/30ae003dba.js" crossorigin="anonymous"></script>
-   
-     <style>  
-    </style> 
+    
+    <style>
+    </style>
+
+
     <title>SeanG Developer </title>
 </head>
 <body>
@@ -22,43 +27,53 @@
         <nav class="navbar-nav" id="navbar">
             <ul class="nav">
                 <li class="nav-item">
-                    <a class=" link-styles nav-link active" id="active"href="#">Home</a>
+                    <a class="link-styles nav-link" href="index.html">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class=" link-styles nav-link" href="about.html">About</a>
+                    <a class="link-styles nav-link active" id="active" href="#">About</a>
                 </li>
                 <li class="nav-item">
-                    <a class=" link-styles nav-link" href="portfolio.html">Portfolio</a>
+                    <a class="link-styles nav-link" href="portfolio.html">Portfolio</a>
                 </li>
                 <li class="nav-item">
                     <a class=" link-styles nav-link badge-primary" href="contact.html"> <span id="contact"> Contact </span> </a>
                 </li>
             </ul>
         </nav>
-        <section class="mainsection">
-            <div class="container-fluid d-flex justify-content-center"> 
+        <section>
+            <div class="container-fluid" id="aboutmediv">
                 <div class="row">
-                    <div class="col-md-12">
-                        <h2 class="display-2" id="intro">Kia ora, I'm Sean.</h2>
-                        <header> <h1 class="display-1 fw-bold"> Welcome to my Website<span id="dot">.</span></h1></header>
-                        <p class="fw-light" id="aspiring">I'm an aspiring Software Developer from New Zealand.</p>
-                        <p class="moreinfop"> <a href="about.html" id="info"> More info <i class="fa-solid fa-angle-right"></i></a> </p>
+                    <div class="col-md-6 d-flex justify-content-center align-items-center flex-column">
+                        <br> <br> <br> 
+                        <h1 class="display-1 fw-bold"> ABOUT ME<span>.</span> </h1>
+                        <hr>  
+                    <article>
+                        <p class="fw-light lh-lg text-center">
+                            My interest in video games led me to study Game Development. Exploring this field of study, led me to discover my passion for programming and complete a Diploma in Game Development and Art. I decided to further my knowledge where I am currently completing a Full Stack Development course, while being on contract work with an IT company called Cognitiv.
+                            My overall goal as a Software Developer is to become a Back End Developer, as Data Science intrigues me. 
+                        </p>
+                        <p class="fw-light text-center">
+                            When I'm not programming you would most likely find me at the gym.
+                        </p>
+                    </article>
+                    </div>
+                    <div class="col-md-6 d-flex justify-content-center"> 
+                        <img id="seanimg" src="../images/SGulleryPic.jpg" alt="Image of publisher">
                     </div>
                 </div>
             </div>
         </section>
-        <!-- To fix the nav bar I removed the nav bootstrap-->
         <!-- Referenced bootstrap for button classes -->
         <footer class="bg-light text-center text-white">
             <div class="containter-fluid bg-light"> 
-                <div id="rowfooter">
-                    <div class="col-md-12">
+                <div id="rowfooter1">
+                    <div class="col-lg-12">
                         <!-- github icon from font awesome-->
-                        <a class=" button btn btn-outline-light btn-floating m-1 mt-3" href="https://github.com/Seagull743"  target=”_blank” role="button">
+                        <a class="button btn btn-outline-light btn-floating m-1 mt-3" href="https://github.com/Seagull743"  target=”_blank” role="button">
                             <i class="fa-brands fa-git"></i>
                         </a>
                         <!-- itch.io icon from font awesome-->
-                        <a class=" button btn btn-outline-light btn-floating m-1 mt-3" href="https://seagull743.itch.io/"  target=”_blank” role="button">
+                        <a class="button btn btn-outline-light btn-floating m-1 mt-3" href="https://seagull743.itch.io/"  target=”_blank” role="button">
                             <i class="fa-brands fa-itch-io"></i>
                         </a>
                         <!-- linkedin icon from font awesome-->
@@ -66,7 +81,7 @@
                             <i class="fa-brands fa-linkedin-in"></i>
                         </a>
                         <br> 
-                        <p class="copyright">© 2022 Copyright, Designed by Sean Gullery</p>
+                        <p id="copyright">© 2022 Copyright, Designed by Sean Gullery </p>
                     </div>
                 </div>
             </div>
